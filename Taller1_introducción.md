@@ -17,9 +17,9 @@
 #SBATCH --output=logs_stats/stats_%j.out
 #SBATCH --error=logs_stats/stats_%j.err
 #SBATCH --ntasks=1
-#SBATCH --cpus-per-task=4
+#SBATCH --cpus-per-task=1
 #SBATCH --mem=16G
-#SBATCH --time=8:00:00
+#SBATCH --time=1:00:00
 
 METADATA="antarctica_full_metadata.tsv"
 TMPDIR="./tmp_stats"
