@@ -21,7 +21,7 @@
 #SBATCH --mem=16G
 #SBATCH --time=1:00:00
 
-METADATA="antarctica_full_metadata.tsv"
+METADATA="antarctica_full_paths.tsv"
 TMPDIR="./tmp_stats"
 OUTPUT_STATS="assembly_read_stats_full.tsv"
 FILTERED_DIR="./filtered_contigs"
