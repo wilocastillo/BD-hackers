@@ -8,6 +8,9 @@
 | P3_2m_140122_MG | /home/wcastillo/01_raw_reads/P3_2m_140122_gi_ACTAGTGCTT-ACTCTGTTCT_L002_R1_001.fastq.gz | /home/wcastillo/01_raw_reads/P3_2m_140122_gi_ACTAGTGCTT-ACTCTGTTCT_L002_R2_001.fastq.gz | /home/wcastillo/02_clean_reads/P3_2m_140122_MG_clean_R1.fastq.gz | /home/wcastillo/02_clean_reads/P3_2m_140122_MG_clean_R2.fastq.gz | /home/wcastillo/03_assembly/P3_2m_140122_MG/final.contigs.fa |
 | P3_30m_140122_MG | /home/wcastillo/01_raw_reads/P3_30m_140122_gi_TGAGATCACA-TGTACCGTGC_L002_R1_001.fastq.gz | /home/wcastillo/01_raw_reads/P3_30m_140122_gi_TGAGATCACA-TGTACCGTGC_L002_R2_001.fastq.gz | /home/wcastillo/02_clean_reads/P3_30m_140122_MG_clean_R1.fastq.gz | /home/wcastillo/02_clean_reads/P3_30m_140122_MG_clean_R2.fastq.gz | /home/wcastillo/03_assembly/P3_30m_140122_MG/final.contigs.fa |
 
+
+## ¿Para qué tabular rutas?
+
 ```
 #!/bin/bash
 #SBATCH --job-name=stats_assemblies
