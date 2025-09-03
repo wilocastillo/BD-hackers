@@ -10,7 +10,10 @@
 
 
 ## ¿Para qué tabular rutas?
-
+Intenta usar este script con tus datos, ¿qué más podríamos agregar?
+- Concepto N50/L50
+- Calidades de ensambles
+- Calidades de reads
 ```
 #!/bin/bash
 #SBATCH --job-name=stats_assemblies
@@ -76,3 +79,6 @@ done  # ← this was missing
 
 echo "[DONE] Stats written to: $OUTPUT_STATS"
 ```
+
+##¿Qué tipo de análisis podemos realizar independientes de ensambles?
+Desafío 1: Análisis independientes de ensambles y gráfico interactivo
