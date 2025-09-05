@@ -1,5 +1,6 @@
 # Día 1
 ## Uso de tablas para el análisis de datos en serie
+## ¿Para qué tabular rutas?
 | Sample_ID       | raw_read_R1 | raw_read_R2 | clean_read_R1 | clean_read_R2 | assembly |
 |-----------------|-------------|-------------|---------------|---------------|----------|
 | P3_2m_110220_MG | /home/wcastillo/01_raw_reads/P3_2m_110220_gi_CTTAAGTGAC-TACGCTAGTT_L001_R1_001.fastq.gz | /home/wcastillo/01_raw_reads/P3_2m_110220_gi_CTTAAGTGAC-TACGCTAGTT_L001_R2_001.fastq.gz | /home/wcastillo/02_clean_reads/P3_2m_110220_MG_clean_R1.fastq.gz | /home/wcastillo/02_clean_reads/P3_2m_110220_MG_clean_R2.fastq.gz | /home/wcastillo/03_assembly/P3_2m_110220_MG/final.contigs.fa |
@@ -8,8 +9,8 @@
 | P3_2m_140122_MG | /home/wcastillo/01_raw_reads/P3_2m_140122_gi_ACTAGTGCTT-ACTCTGTTCT_L002_R1_001.fastq.gz | /home/wcastillo/01_raw_reads/P3_2m_140122_gi_ACTAGTGCTT-ACTCTGTTCT_L002_R2_001.fastq.gz | /home/wcastillo/02_clean_reads/P3_2m_140122_MG_clean_R1.fastq.gz | /home/wcastillo/02_clean_reads/P3_2m_140122_MG_clean_R2.fastq.gz | /home/wcastillo/03_assembly/P3_2m_140122_MG/final.contigs.fa |
 | P3_30m_140122_MG | /home/wcastillo/01_raw_reads/P3_30m_140122_gi_TGAGATCACA-TGTACCGTGC_L002_R1_001.fastq.gz | /home/wcastillo/01_raw_reads/P3_30m_140122_gi_TGAGATCACA-TGTACCGTGC_L002_R2_001.fastq.gz | /home/wcastillo/02_clean_reads/P3_30m_140122_MG_clean_R1.fastq.gz | /home/wcastillo/02_clean_reads/P3_30m_140122_MG_clean_R2.fastq.gz | /home/wcastillo/03_assembly/P3_30m_140122_MG/final.contigs.fa |
 
+## Ahora volvamos a nuestro trabajo
 
-## ¿Para qué tabular rutas?
 Intenta usar este script con tus datos, ¿qué más podríamos agregar?
 - Concepto N50/L50
 - Calidades de ensambles
@@ -75,10 +76,21 @@ tail -n +2 "$METADATA" | while IFS=$'\t' read -r SAMPLE R1 R2 CLEAN_R1 CLEAN_R2 
     # ---- Write line ----
     echo -e "$SAMPLE\t$RAW_TOTAL\t$CLEAN_TOTAL\t$NUM_CONTIGS\t$TOTAL_LEN\t$LONGEST\t$N50\t$NUM_OVER_10K\t$N50_OVER_10K" >> "$OUTPUT_STATS"
 
-done  # ← this was missing
+done  
 
 echo "[DONE] Stats written to: $OUTPUT_STATS"
 ```
 
-##¿Qué tipo de análisis podemos realizar independientes de ensambles?
-Desafío 1: Análisis independientes de ensambles y gráfico interactivo
+## ¿Qué tipo de análisis podemos realizar independientes de ensambles?
+### Nonpareil:
+<img width="1027" height="661" alt="image" src="https://github.com/user-attachments/assets/51270597-1bf8-4b34-9e11-d782d661bad2" />
+<img width="1077" height="795" alt="image" src="https://github.com/user-attachments/assets/7c36e979-7ac0-4bb4-8c2d-4c06f8450e9c" />
+### kmers:
+<img width="1082" height="798" alt="image" src="https://github.com/user-attachments/assets/0cd9e9c9-ff55-44fa-bcbd-9ed80272d115" />
+<img width="1060" height="767" alt="image" src="https://github.com/user-attachments/assets/e416bf39-5ccf-40aa-b82b-21c3a9ed6e7b" />
+### Annotation od genes from reads:
+<img width="1082" height="781" alt="image" src="https://github.com/user-attachments/assets/24d6ae12-3db9-4c53-b43e-a41247d57281" />
+<img width="927" height="912" alt="image" src="https://github.com/user-attachments/assets/2c08a0af-f3c0-4548-836b-88c56a1fa1f4" />
+
+
+# Desafío 1: Análisis independientes de ensambles, estadísticas de reads/ensambles y gráfico interactivo
