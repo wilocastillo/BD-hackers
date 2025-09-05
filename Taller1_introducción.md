@@ -82,15 +82,18 @@ echo "[DONE] Stats written to: $OUTPUT_STATS"
 ```
 
 ## ¿Qué tipo de análisis podemos realizar independientes de ensambles?
-### Nonpareil:
+## Nonpareil:
 <img width="1027" height="661" alt="image" src="https://github.com/user-attachments/assets/51270597-1bf8-4b34-9e11-d782d661bad2" />
 <img width="1077" height="795" alt="image" src="https://github.com/user-attachments/assets/7c36e979-7ac0-4bb4-8c2d-4c06f8450e9c" />
-### kmers:
+## kmers:
 <img width="1082" height="798" alt="image" src="https://github.com/user-attachments/assets/0cd9e9c9-ff55-44fa-bcbd-9ed80272d115" />
 <img width="1060" height="767" alt="image" src="https://github.com/user-attachments/assets/e416bf39-5ccf-40aa-b82b-21c3a9ed6e7b" />
-### Annotation od genes from reads:
+## Annotation of genes from reads:
 <img width="1082" height="781" alt="image" src="https://github.com/user-attachments/assets/24d6ae12-3db9-4c53-b43e-a41247d57281" />
 <img width="927" height="912" alt="image" src="https://github.com/user-attachments/assets/2c08a0af-f3c0-4548-836b-88c56a1fa1f4" />
 
 
 # Desafío 1: Análisis independientes de ensambles, estadísticas de reads/ensambles y gráfico interactivo
+
+<img width="953" height="763" alt="image" src="https://github.com/user-attachments/assets/546c8299-42bb-451b-8bed-976975358d73" />
+
